@@ -1,0 +1,128 @@
+@font-face {
+  font-family: yekan;
+  src: url(./fonts/Yekan.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: yekan;
+}
+body {
+  direction: rtl;
+  padding: 10px;
+  margin: 10px;
+}
+header{
+  background: rgba(133, 248, 233, 0.993);
+  width: 1485px;
+  padding: 7px;
+  margin: -20px;
+}
+header img{
+  width: 86px;
+  position: absolute;
+  top: -11px;
+  color:red ;
+}
+.container {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.car-item {
+  display: inline-block;
+  text-align: center;
+  width: 336px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(238, 208, 41);
+}
+h3 {
+  height: 99px;
+  color: white;
+}
+div img {
+  display: inline-block;
+  width: 75%;
+  border-radius: 100%;
+  margin-top: -66px;
+}
+.car-head {
+  background-color: midnightblue;
+  margin: -10px;
+}
+.car-item a {
+  color: black;
+}
+
+table {
+  background-color: rgba(164, 244, 255, 0.904);
+  width: 100%;
+  background-color:
+  padding-right: 80px;
+  margin: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+}
+table h2 {
+  text-align: center;
+  position: relative;
+  right: 506px;
+}
+input {
+  width: 178%;
+  font-size: 20px;
+  position: relative;
+  right: 198px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 3px;
+}
+#btn-rent,
+#btn-day {
+  margin-left: 121px;
+  background-color: #3767da;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 6px solid #6e92e6;
+  color: white;
+  padding: 10px 10px;
+  position: relative;
+  right: 900px;
+}
+#btn-rent:hover {
+  border-bottom: none;
+  margin-top: 6px;
+  cursor: pointer;
+}
+#btn-day:hover {
+  border-bottom: none;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  right: 70px;
+}
+table {
+  display: none;
+}
+.display {
+  border: 1px solid red;
+  background: green;
+}
+h4{
+  text-align: center;
+  font-size: 30px;
+}
+
+.display-result{
+  opacity: 0.3;
+}

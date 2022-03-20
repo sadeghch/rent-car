@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اجاره خودرو</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        اجاره خودرو های لوکس شرکت<img src="./src/image/logo.png" alt="" />
+      </h1>
+    </header>
+    <br />
+    <section class="container">
+      <div class="car-item">
+        <a onclick="selector('prid',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 12000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item">
+        <a onclick="selector('pego',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 13000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item">
+        <a onclick="selector('santafe',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 14000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item">
+        <a onclick="selector('toyota',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 15000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item">
+        <a onclick="selector('landcroz',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 16000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item">
+        <a onclick="selector('tigo',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 17000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item">
+        <a onclick="selector('honda',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 18000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item" id="cars">
+        <a onclick="selector('pishro',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 19000</h2>
+          <br />
+        </a>
+      </div>
+
+      <div class="car-item" id="cars">
+        <a onclick="selector('kavir',this)">
+          <div class="car-head">
+            <h3>bmw s5</h3>
+          </div>
+          <img src="./src/image/car.jpg" alt="car" />
+          <h2>قیمت جهت اجاره 20000</h2>
+          <br />
+        </a>
+      </div>
+    </section>
+    <section>
+      <table id="table">
+        <tr>
+          <td>
+            <h2>محاسبه هزینه</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="day"> تعداد روز اجاره</label>
+          </td>
+          <td>
+            <input id="day" min="1" type="number" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cost">قیمت</label></td>
+          <td>
+            <input type="number" id="cost" readonly disabled />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="btn-day" type="button" onclick="calccost()">
+              محاسبه هزینه
+            </button>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <table id="table2">
+        <tr>
+          <td>
+            <h2>مشخصات اجاره کننده خودرو</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="name">نام</label>
+          </td>
+          <td>
+            <input id="name" min="1" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="family">نام خانوادگی</label>
+          </td>
+          <td>
+            <input id="family" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phone">موبایل</label></td>
+          <td><input id="phone" type="number" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              id="btn-rent"
+              type="button"
+              onclick="resultrent()"
+              value="ثبت درخواست"
+            >
+              ثبت درخواست
+            </button>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h4 id="result-massage"></h4>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
